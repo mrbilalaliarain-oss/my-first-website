@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Experience authentic traditional Pakistani dining at Dera & Diwan. Serving premium BBQ, slow-cooked Karahis, aromatic Biryani, and rich desserts in an elegant, warm atmosphere.">
+    <title>Dera & Diwan | Authentic Pakistani Restaurant & Dining</title>
+    <!-- Google Fonts: Playfair Display & Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress" class="scroll-progress-bar"></div>
+
+    <!-- Navigation Bar -->
+    <header class="navbar-header" id="main-header">
+        <div class="navbar-container">
+            <a href="#home" class="logo-brand" id="navbar-logo">
+                <span class="logo-gold">Dera</span> & <span class="logo-cream">Diwan</span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link active" id="nav-link-home">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link" id="nav-link-about">About Us</a></li>
+                    <li class="nav-item"><a href="#menu" class="nav-link" id="nav-link-menu">Menu</a></li>
+                    <li class="nav-item"><a href="#gallery" class="nav-link" id="nav-link-gallery">Gallery</a></li>
+                    <li class="nav-item"><a href="#reservation" class="nav-link" id="nav-link-reservation">Reservations</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link" id="nav-link-contact">Contact</a></li>
+                </ul>
+                <div class="nav-cta-mobile">
+                    <a href="#reservation" class="btn btn-gold btn-sm">Book a Table</a>
+                </div>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="#reservation" class="btn btn-gold btn-outline btn-sm hidden-mobile" id="nav-book-btn">Book a Table</a>
+                <button class="hamburger-toggle" id="hamburger-toggle" aria-label="Toggle Navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content-container">
+            <div class="hero-text-content">
+                <span class="hero-subtitle">Welcome to Dera & Diwan</span>
+                <h1 class="hero-title">An Authentic Journey of <span class="text-gold">Pakistani Flavors</span></h1>
+                <p class="hero-description">Indulge in our signature slow-cooked Karahis, charcoal BBQ, and aromatic Biryanis crafted from heirloom recipes and cooked to perfection.</p>
+                <div class="hero-btn-group">
+                    <a href="#menu" class="btn btn-gold" id="hero-order-btn">Order Now</a>
+                    <a href="#reservation" class="btn btn-outline-cream" id="hero-book-btn">Book a Table</a>
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-down-indicator" aria-label="Scroll to About Section">
+            <span class="mouse-icon">
+                <span class="wheel"></span>
+            </span>
+            <span class="arrow-down"><i class="fa-solid fa-chevron-down"></i></span>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section section-padding" id="about">
+        <div class="section-container">
+            <div class="grid-2-col">
+                <div class="about-text-wrapper animate-on-scroll">
+                    <span class="section-subtitle">Our Story</span>
+                    <h2 class="section-title">Cultivating Tradition & <span class="text-gold">Culinary Heritage</span></h2>
+                    <div class="accent-line"></div>
+                    <p class="about-para">Dera & Diwan brings the heart and soul of traditional Pakistani hospitality to your table. Rooted in the rich cultural legacy of the subcontinent, our name represents two spaces of gatherings: the rustic warmth of the <strong>Dera</strong> and the courtly sophistication of the <strong>Diwan</strong>.</p>
+                    <p class="about-para">Our chefs employ ancestral slow-cooking techniques, marinating premium cuts of meat overnight and cooking them over live charcoal embers or in hand-beaten iron Karahis. Every dish represents a culinary tradition passed down through generations, utilizing hand-ground spices and fresh local ingredients.</p>
+                    <div class="about-features-grid">
+                        <div class="feature-item">
+                            <div class="feature-icon-wrapper">
+                                <i class="fa-solid fa-fire-burner"></i>
+                            </div>
+                            <h3 class="feature-title">Live Charcoal Grill</h3>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon-wrapper">
+                                <i class="fa-solid fa-seedling"></i>
+                            </div>
+                            <h3 class="feature-title">Authentic Spices</h3>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon-wrapper">
+                                <i class="fa-solid fa-handshake"></i>
+                            </div>
+                            <h3 class="feature-title">Traditional Hospitality</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image-wrapper animate-on-scroll">
+                    <div class="image-border-decoration"></div>
+                    <img src="images/restaurant_interior.png" alt="Dera & Diwan restaurant luxurious warm dining atmosphere" class="about-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Menu Section -->
+    <section class="menu-section section-padding" id="menu">
+        <div class="section-container">
+            <div class="section-header text-center animate-on-scroll">
+                <span class="section-subtitle">Taste Our Creation</span>
+                <h2 class="section-title">The Royal <span class="text-gold">Desi Menu</span></h2>
+                <div class="accent-line center"></div>
+                <p class="section-desc">From sizzling barbecues to slow-cooked rich gravies and majestic desserts, explore our authentic dishes cooked to delight your senses.</p>
+            </div>
+
+            <!-- Menu Category Filter Tabs -->
+            <div class="menu-filters-wrapper animate-on-scroll" id="menu-filters">
+                <button class="filter-btn active" data-filter="all">All Dishes</button>
+                <button class="filter-btn" data-filter="bbq">Charcoal BBQ</button>
+                <button class="filter-btn" data-filter="karahi">Karahi & Handi</button>
+                <button class="filter-btn" data-filter="rice">Biryani & Rice</button>
+                <button class="filter-btn" data-filter="desserts">Sweet Delicacies</button>
+            </div>
+
+            <!-- Menu Grid -->
+            <div class="menu-grid animate-on-scroll" id="menu-grid-items">
+                
+                <!-- Item 1: BBQ -->
+                <div class="menu-item-card" data-category="bbq" id="menu-item-bbq-platter">
+                    <div class="menu-item-img-wrapper">
+                        <img src="images/bbq_platter.png" alt="Sizzling Charcoal BBQ Platter" class="menu-item-img">
+                        <span class="menu-item-tag">Chef's Special</span>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-title">Royal BBQ Platter</h3>
+                            <span class="menu-item-price">$34.99</span>
+                        </div>
+                        <p class="menu-item-description">A majestic assortment of Chicken Tikka, Beef Seekh Kebabs, and succulent Malai Boti, served sizzling with fresh mint raita and butter naans.</p>
+                        <div class="menu-item-footer">
+                            <span class="menu-item-spiciness"><i class="fa-solid fa-pepper-hot text-gold"></i> Medium Spicy</span>
+                            <button class="add-to-order-btn" aria-label="Order Royal BBQ Platter"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2: Karahi -->
+                <div class="menu-item-card" data-category="karahi" id="menu-item-mutton-karahi">
+                    <div class="menu-item-img-wrapper">
+                        <img src="images/karahi.png" alt="Traditional Mutton Karahi" class="menu-item-img">
+                        <span class="menu-item-tag">Popular</span>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-title">Traditional Mutton Karahi</h3>
+                            <span class="menu-item-price">$24.99</span>
+                        </div>
+                        <p class="menu-item-description">Tender goat meat slow-simmered in a traditional black iron wok with fresh tomatoes, ginger, garlic, green chilies, and hand-crushed spices.</p>
+                        <div class="menu-item-footer">
+                            <span class="menu-item-spiciness"><i class="fa-solid fa-pepper-hot text-gold"></i><i class="fa-solid fa-pepper-hot text-gold"></i> Very Spicy</span>
+                            <button class="add-to-order-btn" aria-label="Order Traditional Mutton Karahi"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3: Rice -->
+                <div class="menu-item-card" data-category="rice" id="menu-item-mutton-biryani">
+                    <div class="menu-item-img-wrapper">
+                        <img src="images/biryani.png" alt="Aromatic Royal Mutton Biryani" class="menu-item-img">
+                        <span class="menu-item-tag">Signature</span>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-title">Royal Mutton Biryani</h3>
+                            <span class="menu-item-price">$19.99</span>
+                        </div>
+                        <p class="menu-item-description">Fragrant extra-long grain basmati rice slow-cooked on 'Dum' with tender mutton, saffron infusion, fried onions, plums, and aromatic spices.</p>
+                        <div class="menu-item-footer">
+                            <span class="menu-item-spiciness"><i class="fa-solid fa-pepper-hot text-gold"></i> Medium Spicy</span>
+                            <button class="add-to-order-btn" aria-label="Order Royal Mutton Biryani"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 4: Desserts -->
+                <div class="menu-item-card" data-category="desserts" id="menu-item-shahi-kheer">
+                    <div class="menu-item-img-wrapper">
+                        <img src="images/kheer.png" alt="Shahi Kheer Dessert" class="menu-item-img">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-title">Shahi Zafrani Kheer</h3>
+                            <span class="menu-item-price">$7.99</span>
+                        </div>
+                        <p class="menu-item-description">Rich rice pudding slow-reduced with milk, cream, and cardamoms, infused with saffron and garnished with pistachios and edible silver leaf.</p>
+                        <div class="menu-item-footer">
+                            <span class="menu-item-spiciness"><i class="fa-solid fa-ice-cream text-gold"></i> Sweet Delight</span>
+                            <button class="add-to-order-btn" aria-label="Order Shahi Zafrani Kheer"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 5: BBQ -->
+                <div class="menu-item-card" data-category="bbq" id="menu-item-malai-boti">
+                    <div class="menu-item-img-wrapper">
+                        <img src="images/bbq_platter.png" alt="Sizzling Chicken Malai Boti" class="menu-item-img">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-title">Saffron Malai Boti</h3>
+                            <span class="menu-item-price">$15.99</span>
+                        </div>
+                        <p class="menu-item-description">Skewered boneless chicken breast pieces marinated in cream, cheese, cardamom, and saffron, char-broiled to a meltingly tender finish.</p>
+                        <div class="menu-item-footer">
+                            <span class="menu-item-spiciness"><i class="fa-solid fa-circle text-gold"></i> Mild</span>
+                            <button class="add-to-order-btn" aria-label="Order Saffron Malai Boti"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 6: Karahi -->
+                <div class="menu-item-card" data-category="karahi" id="menu-item-chicken-handi">
+                    <div class="menu-item-img-wrapper">
+                        <img src="images/karahi.png" alt="Creamy Peshawari Chicken Handi" class="menu-item-img">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-title">Peshawari Chicken Handi</h3>
+                            <span class="menu-item-price">$18.99</span>
+                        </div>
+                        <p class="menu-item-description">Boneless chicken cooked in a traditional clay pot (Handi) with a rich gravy of cream, butter, yogurt, black pepper, and fresh green chilies.</p>
+                        <div class="menu-item-footer">
+                            <span class="menu-item-spiciness"><i class="fa-solid fa-pepper-hot text-gold"></i> Medium Spicy</span>
+                            <button class="add-to-order-btn" aria-label="Order Peshawari Chicken Handi"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section section-padding" id="gallery">
+        <div class="section-container">
+            <div class="section-header text-center animate-on-scroll">
+                <span class="section-subtitle">Visual Experience</span>
+                <h2 class="section-title">Ambiance & <span class="text-gold">Delicacies</span></h2>
+                <div class="accent-line center"></div>
+                <p class="section-desc">Glimpse the visual artistry of our culinary masterpieces and the traditional luxury of our dining settings.</p>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid animate-on-scroll" id="gallery-image-grid">
+                <div class="gallery-item" id="gallery-item-1">
+                    <img src="images/bbq_platter.png" alt="Charcoal Grilled Tikka & Kebabs">
+                    <div class="gallery-hover-overlay">
+                        <h3 class="gallery-hover-title">Desi Charcoal Barbecue</h3>
+                        <p class="gallery-hover-category">Charcoal BBQ</p>
+                    </div>
+                </div>
+                <div class="gallery-item" id="gallery-item-2">
+                    <img src="images/restaurant_interior.png" alt="Luxurious Dining Room with Archways">
+                    <div class="gallery-hover-overlay">
+                        <h3 class="gallery-hover-title">The Royal Court (Diwan)</h3>
+                        <p class="gallery-hover-category">Our Ambiance</p>
+                    </div>
+                </div>
+                <div class="gallery-item" id="gallery-item-3">
+                    <img src="images/biryani.png" alt="Plated Chicken Biryani Close-up">
+                    <div class="gallery-hover-overlay">
+                        <h3 class="gallery-hover-title">Dum-cooked Mutton Biryani</h3>
+                        <p class="gallery-hover-category">Signature Rice</p>
+                    </div>
+                </div>
+                <div class="gallery-item" id="gallery-item-4">
+                    <img src="images/karahi.png" alt="Sizzling Karahi cooking on high flame">
+                    <div class="gallery-hover-overlay">
+                        <h3 class="gallery-hover-title">Slow Cooked Wok Karahi</h3>
+                        <p class="gallery-hover-category">Authentic Handi</p>
+                    </div>
+                </div>
+                <div class="gallery-item" id="gallery-item-5">
+                    <img src="images/hero_bg.png" alt="Atmospheric candle lighting on wooden table">
+                    <div class="gallery-hover-overlay">
+                        <h3 class="gallery-hover-title">Warm Dining Ambiance</h3>
+                        <p class="gallery-hover-category">Our Ambiance</p>
+                    </div>
+                </div>
+                <div class="gallery-item" id="gallery-item-6">
+                    <img src="images/kheer.png" alt="Shahi Kheer Sweet Rice Pudding in clay pot">
+                    <div class="gallery-hover-overlay">
+                        <h3 class="gallery-hover-title">Zafrani Shahi Kheer</h3>
+                        <p class="gallery-hover-category">Dessert</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section class="reservation-section section-padding" id="reservation">
+        <div class="section-container">
+            <div class="grid-2-col align-center">
+                <div class="reservation-info-wrapper animate-on-scroll">
+                    <span class="section-subtitle">Reserve A Table</span>
+                    <h2 class="section-title">Host Your Gathering At <span class="text-gold">Dera & Diwan</span></h2>
+                    <div class="accent-line"></div>
+                    <p class="reservation-para">Whether it's a family gathering, business dinner, or an intimate celebration, reserve your spot and let us host you with classic hospitality. For bookings exceeding 12 guests, please contact our events desk directly.</p>
+                    
+                    <div class="reservation-contact-cards">
+                        <div class="res-card">
+                            <i class="fa-solid fa-phone-volume text-gold"></i>
+                            <div>
+                                <h4>Call Events Desk</h4>
+                                <p>+92 21 34567890</p>
+                            </div>
+                        </div>
+                        <div class="res-card">
+                            <i class="fa-solid fa-envelope text-gold"></i>
+                            <div>
+                                <h4>Email Enquiries</h4>
+                                <p>reservations@deradiwan.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reservation-form-wrapper animate-on-scroll" id="booking-container">
+                    <h3 class="form-title">Online Table Reservation</h3>
+                    <p class="form-subtitle">Secure your table instantly. We will confirm via SMS/Email.</p>
+                    <form id="reservation-form" novalidate>
+                        <div class="form-row-2">
+                            <div class="form-group">
+                                <label for="booking-name">Full Name *</label>
+                                <input type="text" id="booking-name" name="name" placeholder="Bilal Ali" required>
+                                <span class="error-msg" id="error-name">Please enter your full name.</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="booking-phone">Phone Number *</label>
+                                <input type="tel" id="booking-phone" name="phone" placeholder="+92 300 1234567" required>
+                                <span class="error-msg" id="error-phone">Please enter a valid phone number.</span>
+                            </div>
+                        </div>
+                        <div class="form-row-2">
+                            <div class="form-group">
+                                <label for="booking-email">Email Address</label>
+                                <input type="email" id="booking-email" name="email" placeholder="bilal@example.com">
+                                <span class="error-msg" id="error-email">Please enter a valid email address.</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="booking-guests">Number of Guests *</label>
+                                <select id="booking-guests" name="guests" required>
+                                    <option value="" disabled selected>Select Guests</option>
+                                    <option value="1">1 Person</option>
+                                    <option value="2">2 People</option>
+                                    <option value="3">3 People</option>
+                                    <option value="4">4 People</option>
+                                    <option value="5">5 People</option>
+                                    <option value="6">6 People</option>
+                                    <option value="7-10">7 to 10 People</option>
+                                    <option value="11-12">11 to 12 People</option>
+                                </select>
+                                <span class="error-msg" id="error-guests">Please select the number of guests.</span>
+                            </div>
+                        </div>
+                        <div class="form-row-2">
+                            <div class="form-group">
+                                <label for="booking-date">Booking Date *</label>
+                                <input type="date" id="booking-date" name="date" required>
+                                <span class="error-msg" id="error-date">Please select a valid booking date.</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="booking-time">Dining Time *</label>
+                                <select id="booking-time" name="time" required>
+                                    <option value="" disabled selected>Select Time Slot</option>
+                                    <option value="12:30 PM">Lunch: 12:30 PM - 2:00 PM</option>
+                                    <option value="2:00 PM">Lunch: 2:00 PM - 3:30 PM</option>
+                                    <option value="7:00 PM">Dinner: 7:00 PM - 8:30 PM</option>
+                                    <option value="8:30 PM">Dinner: 8:30 PM - 10:00 PM</option>
+                                    <option value="10:00 PM">Dinner: 10:00 PM - 11:30 PM</option>
+                                    <option value="11:30 PM">Late Night BBQ: 11:30 PM - 1:00 AM</option>
+                                </select>
+                                <span class="error-msg" id="error-time">Please select a dining time slot.</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="booking-message">Special Instructions / Requests</label>
+                            <textarea id="booking-message" name="message" rows="3" placeholder="Let us know if you require wheelchair access, high chairs, or if you're celebrating a special occasion..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-gold btn-block" id="booking-submit-btn">Reserve My Table</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Map Section -->
+    <section class="contact-section section-padding" id="contact">
+        <div class="section-container">
+            <div class="section-header text-center animate-on-scroll">
+                <span class="section-subtitle">Find & Contact Us</span>
+                <h2 class="section-title">Where To Find <span class="text-gold">Dera & Diwan</span></h2>
+                <div class="accent-line center"></div>
+            </div>
+
+            <div class="grid-2-col address-map-grid">
+                <!-- Contact info cards -->
+                <div class="contact-details-wrapper animate-on-scroll">
+                    <div class="contact-info-list">
+                        
+                        <div class="contact-info-card" id="contact-address-card">
+                            <div class="contact-icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Location Address</h3>
+                                <p>Plot 43-C, Khayaban-e-Shahbaz, Phase 6, DHA, Karachi, Pakistan</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-card" id="contact-phone-card">
+                            <div class="contact-icon">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Phone Reservations</h3>
+                                <p>+92 21 34567890<br>+92 300 9876543</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-card" id="contact-email-card">
+                            <div class="contact-icon">
+                                <i class="fa-solid fa-envelope-open-text"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Email Contact</h3>
+                                <p>info@deradiwan.com<br>events@deradiwan.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-card" id="contact-hours-card">
+                            <div class="contact-icon">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Business Hours</h3>
+                                <p>
+                                    <strong>Monday – Thursday:</strong> 12:30 PM – 12:00 AM<br>
+                                    <strong>Friday – Sunday:</strong> 12:30 PM – 1:30 AM
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Embedded Map -->
+                <div class="map-iframe-wrapper animate-on-scroll" id="map-container">
+                    <!-- Premium customized embedded map -->
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3621.579482937748!2d67.06283731500693!3d24.810903384078864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33c467a57a1b9%3A0x6b6c00d4181a0702!2sDHA%20Phase%206%20Karachi!5e0!3m2!1sen!2spk!4v1683800000000!5m2!1sen!2spk" 
+                        class="google-map-iframe" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade" 
+                        title="Dera and Diwan Location Map"
+                        id="google-map">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top section-padding">
+            <div class="section-container">
+                <div class="footer-grid">
+                    
+                    <div class="footer-brand-col">
+                        <a href="#home" class="footer-logo">
+                            <span class="logo-gold">Dera</span> & <span class="logo-cream">Diwan</span>
+                        </a>
+                        <p class="footer-about-text">Delivering an authentic gourmet journey with traditional Pakistani BBQ, handi, and regional desserts in an atmosphere of warmth and hospitality.</p>
+                        <div class="social-icons">
+                            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="https://tripadvisor.com" target="_blank" rel="noopener noreferrer" aria-label="TripAdvisor"><i class="fa-brands fa-tripadvisor"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="footer-links-col">
+                        <h3 class="footer-heading">Quick Links</h3>
+                        <ul class="footer-links-list">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About Our Story</a></li>
+                            <li><a href="#menu">Royal Desi Menu</a></li>
+                            <li><a href="#gallery">Gallery</a></li>
+                            <li><a href="#reservation">Book A Table</a></li>
+                            <li><a href="#contact">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-hours-col">
+                        <h3 class="footer-heading">Dining Hours</h3>
+                        <ul class="footer-hours-list">
+                            <li>
+                                <span class="day">Monday - Thursday</span>
+                                <span class="hours">12:30 PM - 12:00 AM</span>
+                            </li>
+                            <li>
+                                <span class="day">Friday</span>
+                                <span class="hours">12:30 PM - 01:30 AM</span>
+                            </li>
+                            <li>
+                                <span class="day">Saturday</span>
+                                <span class="hours">12:30 PM - 01:30 AM</span>
+                            </li>
+                            <li>
+                                <span class="day">Sunday</span>
+                                <span class="hours">12:30 PM - 01:30 AM</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-newsletter-col">
+                        <h3 class="footer-heading">Newsletter</h3>
+                        <p class="newsletter-text">Subscribe to receive updates on food festivals, seasonal recipes, and special reservation slots.</p>
+                        <form id="newsletter-form" class="newsletter-form-wrapper">
+                            <input type="email" placeholder="Your Email Address" required aria-label="Email address for newsletter">
+                            <button type="submit" class="newsletter-btn" aria-label="Subscribe to newsletter"><i class="fa-solid fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="section-container">
+                <div class="footer-bottom-flex">
+                    <p class="copyright-text">&copy; 2026 Dera & Diwan Restaurant. All Rights Reserved.</p>
+                    <ul class="footer-bottom-links">
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#terms">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Booking Confirmation Modal -->
+    <div class="modal-backdrop" id="booking-modal">
+        <div class="modal-card">
+            <button class="modal-close" id="modal-close-btn" aria-label="Close Confirmation Modal">&times;</button>
+            <div class="modal-icon-container">
+                <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <h3 class="modal-title">Table Reserved Successfully!</h3>
+            <p class="modal-message">Thank you, <strong id="modal-user-name">Bilal Ali</strong>. Your table for <strong id="modal-user-guests">4 People</strong> is tentatively reserved for <strong id="modal-user-date">June 12, 2026</strong> at <strong id="modal-user-time">8:30 PM</strong>.</p>
+            <p class="modal-disclaimer">We have sent a confirmation SMS and email containing your reservation code <strong>#DD-8930</strong>. Please present it at the reception.</p>
+            <button class="btn btn-gold btn-block" id="modal-ok-btn">Wonderful, Thank You!</button>
+        </div>
+    </div>
+
+    <!-- Active Order Modal (Interactive Mockup) -->
+    <div class="modal-backdrop" id="order-modal">
+        <div class="modal-card">
+            <button class="modal-close" id="order-modal-close-btn" aria-label="Close Order Modal">&times;</button>
+            <div class="modal-icon-container order-icon">
+                <i class="fa-solid fa-basket-shopping text-gold"></i>
+            </div>
+            <h3 class="modal-title">Order Placed!</h3>
+            <p class="modal-message">Your choice has been added to your table's digital order tab.</p>
+            <p class="modal-disclaimer">If you are ordering for takeaway or home delivery, please proceed to checkout or call us to confirm.</p>
+            <button class="btn btn-gold btn-block" id="order-ok-btn">Continue Exploring</button>
+        </div>
+    </div>
+
+    <!-- Main JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
